@@ -25,7 +25,7 @@
             <nav class="navbar navbar-expand-lg stroke">
                 <h1>
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/Rapid Red Logo Only 3.png" alt="Rapid Logo" >
+                        <img src="assets/images/Rapid_logo.png" alt="Rapid Logo" >
                     </a>
                 </h1>
                 <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
@@ -170,7 +170,7 @@
     <!-- //about section -->
 
     <!-- form & play icon section -->
-    <section class="content-sec py-5">
+    <section class="content-sec py-5" id="quotation">
         <div class="container py-md-5 py-4">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-sm-4 banner-play text-center">
@@ -181,11 +181,11 @@
                         <h3 class="title-main-2 mb-4">
                             Request a Free Quote</h3>
                         <form action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                            <input type="hidden" name="access_key" value="1d579478-1df4-4c68-a2c9-fa567c529a52">
                             <input type="text" name="Name" id="name" placeholder="Enter your name" required="">
                             <input type="number" name="Phone Number" id="phone" placeholder="Enter your phone no" required="">
                             <input type="email" name="Email" id="email" placeholder="Enter your email" required="">
-                            <input type="date" name="Date" id="date" placeholder="Move Date" required="">
+                            <input type="date" name="Date" id="newdate" placeholder="Move Date" required="">
                             <input type="text" name="From" id="from" placeholder="Move From" required="">
                             <input type="text" name="To" id="to" placeholder="Move To" required="">
                             <textarea name="Message" id="Message" placeholder="Type your requirements here"
@@ -267,7 +267,7 @@
                         <ul class="buttons">
                             <li class="phone-sec"><span class="fa fa-volume-control-phone mr-1"
                                     aria-hidden="true"></span>
-                                <a class="call-style" href="tel:+44 7960 0330 00">+44 7960 0330 00</a>
+                                <a class="call-style" href="tel:+44 7960 0330 00">+44 7960 033 000</a>
                             </li>
                             <li class="green">Or</li>
                             <li><a href="contact.html" class="btn btn-style">Get in touch</a> </li>
@@ -340,7 +340,8 @@
         <div class="copyright-footer text-center mt-4">
             <div class="container">
                 <div class="columns">
-                    <p>&copy; 2024 Rapid Logistics & Removals Co.
+                    <p>&copy; 2024 Rapid Logistics & Removals Co. Design By
+                        <a href="" target="_blank">NeuroZings</a>
                     </p>
                 </div>
             </div>
@@ -380,10 +381,9 @@
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <!-- //common jquery plugin -->
     <script>
-        window.onload = function() {
-            var input = document.getElementById("date");
-            input.placeholder = "Move Date";
-        };
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("date").setAttribute("placeholder", "Move Date");
+        });
     </script>
     <!-- theme switch js (light and dark)-->
     <script src="assets/js/theme-change.js"></script>
